@@ -1,8 +1,9 @@
 const JamTypes = [
-    {name: 'яблочное', fruits: 0.3, sugar: 0.1, timeShort: 14, timeLong: 4},
-    {name: 'вишневое', fruits: 0.5, sugar: 0.1, timeShort: 15, timeLong: 4},
+    {name: 'яблочное', fruits: 0.3, sugar: 0.1, timeShort: 14, timeLong: 4, timeShort: 15, timeLong: 4},
     {name: 'сливовое', fruits: 0.5, sugar: 0.1, timeShort: 15, timeLong: 4},
     {name: 'клубничное', fruits: 0.5, sugar: 0.1, timeShort: 15, timeLong: 4},
+    {name: 'черничное', fruits: 0.5, sugar: 0.1, timeShort: 15, timeLong: 4},
+    {name: 'клубничное', fruits: 0.5, sugar: 0.eShort: 15, timeLong: 4},
     {name: 'черничное', fruits: 0.5, sugar: 0.1, timeShort: 15, timeLong: 4},
 ]
 
@@ -24,8 +25,6 @@ let Jam = function() {
             if(this.jamType === item.name ) {
                 this.time ? alert(`На приготовление у вас уйдет ${item.timeLong} часов`) : alert(`На приготовление у вас уйдет ${item.timeShort} часов`)
 
-                fruits = item.fruits
-                sugar = item.sugar
                 this.currentJam = item
             }
         })
